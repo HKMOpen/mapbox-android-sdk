@@ -93,7 +93,9 @@ public class MapViewGestureDetectorListener extends SimpleOnGestureListener {
         if (this.mapView.getOverlayManager().onDoubleTap(e, this.mapView)) {
             return true;
         }
-        final ILatLng center = this.mapView.getProjection().fromPixels(e.getX(), e.getY());
-        return this.mapView.zoomInFixing(center, false);
+
+        final ILatLng position = this.mapView.getProjection().fromPixels(e.getX(), e.getY());
+        this.mapView.onDoubleTap(position);
+        return true;
     }
 }

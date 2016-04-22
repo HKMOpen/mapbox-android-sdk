@@ -14,5 +14,7 @@ public interface MapViewListener {
 
     public void onTapMap(final MapView pMapView, final ILatLng pPosition);
 
+    public void onDoubleTapMap(final MapView pMapView, final ILatLng pPosition);
+
     public void onLongPressMap(final MapView pMapView, final ILatLng pPosition);
 }

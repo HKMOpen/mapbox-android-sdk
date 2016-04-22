@@ -102,6 +102,11 @@ public class OSMMap implements MapViewListener, MapListener {
         }
     }
 
+    @Override
+    public void onDoubleTapMap(MapView pMapView, ILatLng pPosition) {
+
+    }
+
     private void drawDebugTapEnvelope(MapView pMapView, ILatLng pPosition, float zoom) {
         Envelope env = jtsModel.createTapEnvelope(pPosition, zoom);
         PathOverlay path;

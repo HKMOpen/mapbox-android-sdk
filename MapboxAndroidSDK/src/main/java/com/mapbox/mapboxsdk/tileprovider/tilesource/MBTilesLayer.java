@@ -42,7 +42,7 @@ public class MBTilesLayer extends TileLayer implements MapViewConstants, MapboxC
 
     /**
      * Initialize a new tile layer, represented by a MBTiles file.
-     * This constructor does need a context but as a consequence won't look
+     * This constructor does not need a context but as a consequence won't look
      * for an asset mbtiles
      *
      * @param url path to a MBTiles file
